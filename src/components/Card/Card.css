@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+
+.card--details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.card--details * {
+    margin: 0;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card--inventory {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card--btn {
+  margin-block-end: 1rem;
+  background-color: #4fd868;
+}
+
+.card--btn:hover {
+  background-color: #44bb59;
+}
