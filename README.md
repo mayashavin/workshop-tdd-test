@@ -11,10 +11,15 @@ Good luck!
 ## Prerequisites
 
 Node 20.x or later
+
 Git
+
 Your favorite code editor (I recommend Visual Studio Code)
+
 Vitest
+
 [SWA CLI](https://azure.github.io/static-web-apps-cli/)
+
 [Vite](https://vitejs.dev/)
 
 ## Getting Started
