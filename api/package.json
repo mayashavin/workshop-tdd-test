@@ -8,10 +8,12 @@
     "clean": "rimraf dist",
     "prestart": "npm run clean && npm run build",
     "start": "func start",
-    "test:unit": "vitest --root src/"
+    "test:unit": "vitest --root src/",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0"
+    "@azure/functions": "^4.0.0",
+    "@vitest/coverage-istanbul": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^18.x",

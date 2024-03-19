@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react()],
   test: {
     global: true,
+    rootDir: './src',
     environment: 'jsdom',
     setupFiles: './setupTest.js',
+    coverage: {
+      provider: 'istanbul'
+    }
   },
 })
