@@ -4,21 +4,21 @@ import {
   HttpResponseInit,
   InvocationContext,
 } from "@azure/functions";
+import { getPizzas } from "../services/pizzas";
 
 export async function search(
   request: HttpRequest,
   context: InvocationContext
 ): Promise<HttpResponseInit> {
-  //TODO: Implement search logic
-  context.log(`Http function processed request for url "${request.url}"`);
+  const bodyPayload: { query?: string } = await request.json();
+  const query = bodyPayload?.query || "";
+  const pizzas = await getPizzas(query);
 
-  const name = request.query.get("name") || (await request.text()) || "world";
-
-  return { body: `Hello, ${name}!` };
+  return { jsonBody: pizzas };
 }
 
 app.http("search", {
-  methods: ["GET", "POST"],
+  methods: ["GET"],
   authLevel: "anonymous",
   handler: search,
 });
