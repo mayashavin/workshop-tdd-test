@@ -6,6 +6,8 @@ Each branch in this repo represents a step in the workshop. The master branch is
 
 Good luck!
 
+[Slides](https://docs.google.com/presentation/d/1oQ6jf-llogxygPfXkv879HUEovxcV5xc/edit?usp=drive_link&ouid=105305444899578010046&rtpof=true&sd=true)
+
 ## Prerequisites
 
 Node 20.x or later
